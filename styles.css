@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+}
+
+:root {
+  /* Font - 400i, 700, 800i */
+  --font: "Poppins", sans-serif;
+
+  /* Primary Colors */
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+body {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grey);
+}
+
+/* =========================== Main Container =========================== */
+
+.main-container {
+  width: 50rem;
+  min-height: 35rem;
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 1.5rem 1.5rem 14rem 1.5rem;
+}
+
+/* =========================== Form =========================== */
+
+#form {
+  height: 12rem;
+}
+
+.inputs {
+  display: flex;
+  width: 40rem;
+  border-bottom: 0.1rem solid var(--light-grey);
+  padding-bottom: 2.5rem;
+}
+
+.inputs .unit {
+  color: var(--smokey-grey);
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.2rem;
+}
+
+input {
+  width: 10rem;
+  height: 4rem;
+  margin: 0 2rem 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 2rem;
+  color: var(--smokey-grey);
+  outline: none;
+  border-radius: 0.2rem;
+  border: 0.1rem solid var(--light-grey);
+}
+
+input:focus {
+  border: 0.13rem solid var(--purple);
+  color: var(--off-black);
+}
+
+.empty-msg {
+  font-size: 0.9rem;
+  color: var(--light-red);
+  font-weight: 400;
+  font-style: italic;
+  display: none;
+}
+
+.invalid-msg {
+  font-size: 0.9rem;
+  color: var(--light-red);
+  font-weight: 400;
+  font-style: italic;
+  display: none;
+}
+
+.error {
+  border: 0.1rem solid var(--light-red);
+  color: var(--light-red);
+}
+
+.subBtn {
+  border: none;
+  border-radius: 50%;
+  padding: 1.5rem;
+  background-color: var(--purple);
+  cursor: pointer;
+  transform: translate(38rem, -2.7rem);
+  transition: 0.1s;
+}
+
+.subBtn:hover {
+  background-color: var(--off-black);
+}
+
+.subBtn img {
+  width: 3.2rem;
+  height: 2.5rem;
+}
+
+/* =========================== Results =========================== */
+
+.results p {
+  font-size: 5.9rem;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 6rem;
+}
+
+.results span {
+  color: var(--purple);
+}
