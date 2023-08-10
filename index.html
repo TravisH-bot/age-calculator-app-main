@@ -18,25 +18,22 @@
     <form action="#" id="form">
       <div class="inputs">
 
-        <div class="day">
-          <p class="unit">Day</p>
-          <input type="text" placeholder="DD">
-          <p class="empty-msg">This field is required</p>
-          <p class="invalid-msg">Must be a valid day</p>
+        <div class="units">
+          <label id="day-title" for="day">Day</label>
+          <input id="day" type="number" placeholder="DD">
+          <small></small>
         </div>
 
-        <div class="month">
-          <p class="unit">Month</p>
-          <input type="text" placeholder="MM">
-          <p class="empty-msg">This field is required</p>
-          <p class="invalid-msg">Must be a valid month</p>
+        <div class="units">
+          <label id="month-title" for="month">Month</label>
+          <input id="month" type="number" placeholder="MM">
+          <small></small>
         </div>
 
-        <div class="year">
-          <p class="unit">Year</p>
-          <input type="text" placeholder="YYYY">
-          <p class="empty-msg">This field is required</p>
-          <p class="invalid-msg">Must be in the past</p>
+        <div class="units">
+          <label id="year-title" for="year">Year</label>
+          <input id="year" type="number" placeholder="YYYY">
+          <small></small>
         </div>
 
       </div>
@@ -46,17 +43,19 @@
 
 
     <div class="results">
-      <p><span>- -</span> years</p>
-      <p><span>- -</span> months</p>
-      <p><span>- -</span> days</p>
+      <p><span id="yy">- -</span> years</p>
+      <p><span id="mm">- -</span> months</p>
+      <p><span id="dd">- -</span> days</p>
     </div>
 
   </section>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/TravisH-bot">Travis H</a>.
+    </p>
+  </footer>
 
   <script src="./index.js"></script>
 </body>

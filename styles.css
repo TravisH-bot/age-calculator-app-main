@@ -55,7 +55,7 @@ body {
   padding-bottom: 2.5rem;
 }
 
-.inputs .unit {
+.units label {
   color: var(--smokey-grey);
   text-transform: uppercase;
   margin-bottom: 0.2rem;
@@ -65,7 +65,7 @@ body {
 input {
   width: 10rem;
   height: 4rem;
-  margin: 0 2rem 0.5rem 0;
+  margin: 0 3.1rem 0.5rem 0;
   padding-left: 1rem;
   font-size: 2rem;
   color: var(--smokey-grey);
@@ -79,25 +79,9 @@ input:focus {
   color: var(--off-black);
 }
 
-.empty-msg {
-  font-size: 0.9rem;
+small {
   color: var(--light-red);
-  font-weight: 400;
-  font-style: italic;
-  display: none;
-}
-
-.invalid-msg {
-  font-size: 0.9rem;
-  color: var(--light-red);
-  font-weight: 400;
-  font-style: italic;
-  display: none;
-}
-
-.error {
-  border: 0.1rem solid var(--light-red);
-  color: var(--light-red);
+  padding-left: 0.2rem;
 }
 
 .subBtn {
@@ -130,4 +114,76 @@ input:focus {
 
 .results span {
   color: var(--purple);
+}
+
+.attribution {
+  margin-top: 3rem;
+}
+
+/* =========================== Media Queries =========================== */
+
+@media screen and (max-width: 768px) {
+  /* =========================== Main Container =========================== */
+  body {
+    width: 23.438rem;
+  }
+
+  .main-container {
+    width: 21.438rem;
+    min-height: 28rem;
+    border-radius: 1.5rem 1.5rem 8rem 1.5rem;
+    padding: 1.5rem;
+  }
+
+  /* =========================== Form =========================== */
+  #form {
+    height: 10rem;
+  }
+
+  .inputs {
+    width: 18.5rem;
+    min-height: 10.5rem;
+  }
+
+  .units {
+    width: 7rem;
+  }
+
+  input {
+    width: 5.6rem;
+    height: 3rem;
+    margin: 0 0.8rem 0 0;
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+
+  small {
+    text-align: center;
+    padding-left: 0rem;
+  }
+
+  .subBtn {
+    transform: translate(7rem, -2rem);
+    padding: 1rem;
+  }
+
+  .subBtn img {
+    width: 2.3rem;
+    height: 2rem;
+  }
+
+  /* =========================== Results =========================== */
+  .results {
+    margin-top: 4.5rem;
+  }
+
+  .results p {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .attribution {
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
